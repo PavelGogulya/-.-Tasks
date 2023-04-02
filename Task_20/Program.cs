@@ -15,26 +15,24 @@
 Console.WriteLine("Введите координату x1: ");
 int x1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите кординату Y1: ");
+Console.WriteLine("Введите кординату y1: ");
 int y1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите координату x2: ");
 int x2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите кординату Y2: ");
+Console.WriteLine("Введите кординату y2: ");
 int y2 = Convert.ToInt32(Console.ReadLine());
 
-double faindingDistance = FaindDistance(x1, x2, y1, y2); 
+double faindingDistance = FaindDistance(x1, x2, y1, y2);
 
-Console.WriteLine($"Расстояние между точками А и Б = {faindingDistance}");
+Console.WriteLine ($"Расстояние между точками А и Б = {Math.Round(findingDistance ,2, MidpointRounding.ToZero)}");
 
-double FaindDistance(int x1Coordinata, int x2Coordinata, int y1Coordinata, int y2Coordinata)
-// Метод поиска гипотенузы (расстояния меж.точками) с округлением
+double FaindDistance(int x1, int y1, int x2, int y2)
 
 {
-    int firstCatet = x2Coordinata - x1Coordinata;
-    int secondCatet = y2Coordinata - y1Coordinata;
+    int firstCatet = x2 - x1;
+    int secondCatet = y2 - y1;
     double distance = Math.Sqrt((firstCatet * firstCatet) + (secondCatet * secondCatet));
-    distance = Math.Round(distance, 2, MidpointRounding.ToZero);
-    return distance;
+    return distance;   
 }
