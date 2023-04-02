@@ -24,11 +24,11 @@ int x2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите кординату y2: ");
 int y2 = Convert.ToInt32(Console.ReadLine());
 
-double faindingDistance = FaindDistance(x1, x2, y1, y2);
+double findingDistance = FindDistance(x1, x2, y1, y2);
 
 Console.WriteLine ($"Расстояние между точками А и Б = {Math.Round(findingDistance ,2, MidpointRounding.ToZero)}");
 
-double FaindDistance(int x1, int y1, int x2, int y2)
+double FindDistance(int x1, int y1, int x2, int y2)
 
 {
     int firstCatet = x2 - x1;
