@@ -23,3 +23,19 @@ int SumNumbers(int num) // int num = number
 
 //                  Игорь
 
+// Console.WriteLine($"Введите целое положительное число A:");
+
+// int numberA = Convert.ToInt32(Console.ReadLine());
+
+// int result = Factorial(numberA);
+// Console.WriteLine($"Результат вычисления факториала: {result}");
+
+// int Factorial(int num) // int num = number
+// {
+//     int resultFactorial = 1;
+//     for(int i = 1; i <= num; i++)
+//     {
+//         resultFactorial *= i; // sum += i/ Хотя фигурные скобки '{}' можем опустить, поскольку одно действие
+//     }
+//     return resultFactorial;
+// }
