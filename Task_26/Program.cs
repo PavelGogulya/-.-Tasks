@@ -20,12 +20,24 @@
 //             }
 //             else break;
 //         }
-
 //         Console.WriteLine("Введите число, а не строку!");
 //     }
 
 //     return userNumber;
 // }
+
+// int CountNumbers(int num)
+// {
+//     int count = 0;
+//     while(num>0)
+//     {
+//         num = num / 10;
+//         count++;
+//     }
+//     return count;
+// }
+// Square(GetUserData());
+
 
 // void Square(int userNumber)
 // {
@@ -34,11 +46,13 @@
 //         Console.WriteLine($"|{i,3} | {i * i,3}|");
 //     }
 // }
+// Square(GetUserData());
+
 
 
 //                  Паскаль Ольга
 
-Console.WriteLine("Введите число: ");
+Console.WriteLine("Введите число:");
 int UserNumber = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 
 int result = CountNumbers(UserNumber);
@@ -47,10 +61,10 @@ Console.WriteLine($"Колличество цифр в числе = {result}");
 int CountNumbers(int num)
 {
     int count = 0;
-    while (num > 0 )
+    while(num>0)
     {
-        num = num / 10;
-        count ++;
+        num = num/10;
+        count++;
     }
-    result count;
+    return count;
 }
