@@ -4,7 +4,7 @@
 // [1 2 3 4 5] -> 5 8 3
 // [6 7 3 6] -> 36 21
 
-// от Аверина Павла
+////////////////////////////// от Аверина Павла
 
 // int[] CreateArrayRndInt(int size, int min, int max)
 // {
@@ -50,7 +50,7 @@
 // int[] resultArray = CreateNewModifiedArray(array);
 // PrintArray(resultArray);
 
-/////////// от Игоря
+/////////////////////////// от Игоря
 
 int[] CreateNewPare(int[] arr)
 {

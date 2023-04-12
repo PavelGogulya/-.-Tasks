@@ -33,7 +33,7 @@ int yCoordinate = Convert.ToInt32(Console.ReadLine());
 
 int quarter = Quarter(xCoordinate, yCoordinate); //переменная цельночисленного типа = вызываем метод с (фактическими парамерами)
 string result = quarter > 0
-            ?$"Указанные координаты соответствуют четверти -> {quarter}":
+            ? $"Указанные координаты соответствуют четверти -> {quarter}":
              "Введены некорректные координаты";
 
 Console.WriteLine(result);
@@ -41,7 +41,7 @@ Console.WriteLine(result);
 int Quarter(int x, int y)
 
 {
-    if (x > 0 && y > 0) return 1;
+    if (x > 0 && y > 0) return 1; // x > 0, y > 0
     if (x < 0 && y > 0) return 2;
     if (x < 0 && y < 0) return 3;
     if (x > 0 && y < 0) return 4;

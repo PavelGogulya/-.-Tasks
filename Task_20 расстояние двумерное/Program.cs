@@ -33,6 +33,6 @@ double FindDistance(int x1, int y1, int x2, int y2)
 {
     int firstCatet = x2 - x1;
     int secondCatet = y2 - y1;
-    double distance = Math.Sqrt((firstCatet * firstCatet) + (secondCatet * secondCatet));
+    double distance = Math.Sqrt((firstCatet * firstCatet) + (secondCatet * secondCatet)); // C = корень квадратный (A*A + B*B)
     return distance;   
 }
