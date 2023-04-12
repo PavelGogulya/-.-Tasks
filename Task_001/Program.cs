@@ -14,9 +14,9 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 
 if (numberA == numberB * numberB)
 {
-    Console.WriteLine($ "Ураа число {numberA}  является квадратом числа {numberB}");
+    Console.WriteLine($"Ураа! число {numberA} является квадратом числа {numberB}!!");
 }
 else
 {
-    
+    Console.WriteLine($" Обломинго! число {numberA} не является квадратом {numberB}");
 }
