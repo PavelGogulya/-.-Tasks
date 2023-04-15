@@ -3,25 +3,20 @@
 // 82 -> 10
 // 9012 -> 12
 
+
 Console.WriteLine("Введите число:");
 int UserNumber = Math.Abs(Convert.ToInt32(Console.ReadLine()));
-userNumberLength = UserNumber;
 
 int result = SumNumbers(UserNumber);
-Console.WriteLine($"Колличество цифр в числе = {result}");
+Console.WriteLine($"Сумма цифр в числе = {result}");
 
 int SumNumbers(int num)
 {
     int Sum = 0;
-    while(num>0)
+    while (num > 0)
     {
-        
-        count++;
+        Sum = Sum + num % 10;
+        num = num / 10;
     }
-    return count;
+    return Sum;
 }
-for (int i = 0; i < userNumberLength; i++)
-{
-    num = num + num(i);
-}
-
