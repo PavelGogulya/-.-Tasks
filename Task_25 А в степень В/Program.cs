@@ -8,16 +8,16 @@ int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите степень в которую нужно возвести число");
 int exponent = Convert.ToInt32(Console.ReadLine());
 
-// while (true)
-// if (int.TryParse(Console.ReadLine(), out number))
+int DegreeNumber (int number, int exponent)
+{
+    int result = 1;
+    for (int i = 0; i < exponent; i++)
+    {
+        result = result*number;
+    }
+    return result;
+}
 
-// {
-//     Console.WriteLine("Введите степень в которую нужно возвести число");
-    
-// }
-//     else Console.WriteLine("Число не соответсвует запросу, введите НАТУРАЛЬНОЕ число ");
-
-double result = Math.Pow(number, exponent);
-Console.WriteLine(result);
-
-
+int result = DegreeNumber (number, exponent);
+Console.WriteLine($"при возведении числа {number} в степень {exponent} получим {result}");
+   
