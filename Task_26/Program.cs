@@ -23,3 +23,4 @@ int CountNumbers(int num)
     }
     return count;
 }
+

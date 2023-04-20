@@ -22,7 +22,7 @@ int Factorial(int num) // int num = number
     int resultFactorial = 1;
     for(int i = 1; i <= num; i++)
     {
-        checked
+        checked // проверка полученного результата на переполнения типа
         {
             resultFactorial *= i;
         }                               // sum += i/ Хотя фигурные скобки '{}' можем опустить, поскольку одно действие
