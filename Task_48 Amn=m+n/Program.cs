@@ -37,11 +37,11 @@ void PrintMatrix(int[,] matrix) //  метод void поскольку масс�
     {
         for (int n = 0; n < matrix.GetLength(1); n++)
         {
- //           Console.Write($"{matrix[m, n]}");
-            if (m<matrix.Length - 1) Console.Write($"{matrix[m,n], 3}");
-            else Console.Write($"{matrix[m, n]}");
+            //Console.Write($"{matrix[m, n]}");
+           // if (m<matrix.Length - 1) Console.Write($"{matrix[m,n], 3}");
+           // else Console.Write($"{matrix[m, n]}");
+           Console.Write($"{matrix[m,n], 3}");
         }
         Console.WriteLine();
     }
 }
-
